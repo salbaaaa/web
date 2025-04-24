@@ -1,0 +1,78 @@
+/* Estilos específicos para la página de contacto */
+
+/* --- Estilos para el botón de WhatsApp (igual que en index.css) --- */
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  /* --- Fin Estilos WhatsApp --- */
+  
+  /* Animación de deslizamiento desde arriba */
+  @keyframes slide-in-down {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in-down {
+    animation: slide-in-down 0.5s ease-out forwards; /* Duración y tipo de animación */
+  }
+  
+  /* Ajustar el textarea para el icono */
+  textarea[name="mensaje"] {
+    padding-right: 2.5rem !important; /* Espacio para el icono */
+    line-height: 1.5 !important; /* Ajustar la altura de la línea */
+  }
+  
+  /* Posicionar el icono del mensaje de forma absoluta */
+  textarea[name="mensaje"] + img {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 0.6;
+  }

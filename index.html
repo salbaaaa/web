@@ -12,7 +12,7 @@
           colors: {
             madera: '#8B5E3C',
             bosque: '#3F5E4F',
-            marronOscuro: '#4C6B3C'
+            marronOscuro: '#3F5E4F' // Nota: 'bosque' y 'marronOscuro' son el mismo color aquí
           },
           backgroundImage: {
             textura: "url('https://www.transparenttextures.com/patterns/wood-pattern.png')"
@@ -30,131 +30,120 @@
       }
     }
   </script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="index.css">
+
 </head>
 <body class="bg-textura bg-repeat text-gray-800 font-sans animate-fadeIn">
 
-  <!-- Navbar -->
   <header class="fixed w-full bg-marronOscuro shadow z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
       <h1 class="text-xl font-bold text-white">Aserradero Estévez</h1>
       <nav class="space-x-6 hidden md:flex">
         <a href="#inicio" class="hover:text-madera font-bold text-lg text-white">Inicio</a>
-        <a href="#productos" class="hover:text-madera font-bold text-lg text-white">Productos</a>
+        <a href="productos.html" class="hover:text-madera font-bold text-lg text-white">Productos</a>
         <a href="#nosotros" class="hover:text-madera font-bold text-lg text-white">Nosotros</a>
-        <a href="#contacto" class="hover:text-madera font-bold text-lg text-white">Contacto</a>
+        <a href="contacto.html" class="hover:text-madera font-bold text-lg text-white">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section id="inicio" class="pt-24 relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); background-image: url('/mnt/data/c5b37bfe-8da5-479d-b2a0-aa3b3bf732af.png');">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="relative z-10 text-center px-4">
+      <img src="Imagenes/logo.png" alt="Logo Aserradero Estévez" class="max-w-md mx-auto mb-4" style="max-height: 200px;">
       <h2 class="text-4xl md:text-6xl text-white font-bold mb-4">Madera de calidad para tus proyectos</h2>
       <p class="text-white text-lg mb-6">Somos un aserradero comprometido con la excelencia</p>
-      <a href="#productos" class="bg-bosque text-white px-6 py-3 rounded hover:bg-madera">Ver productos</a>
     </div>
   </section>
 
-  <!-- Productos -->
   <section id="productos" class="py-20 px-6 bg-[#f8f5f1]">
     <div class="max-w-7xl mx-auto">
       <h3 class="text-3xl font-bold text-center text-bosque mb-12">Nuestros productos</h3>
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Producto 1 -->
         <div>
-          <div class="bg-white shadow rounded overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1616627982904-3e53a84b015d" class="w-full h-48 object-cover" alt="Tablas de pino">
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="C:\Users\facus\Desktop\Aserradero\Imagenes\tablas _de _pino.png" class="w-full h-48 object-cover" alt="Tablas de pino">
             <div class="p-4">
               <h4 class="font-bold text-xl mb-2 text-madera">Tablas de pino</h4>
               <p>Madera ideal para construcciones, secada y cepillada. Fáciles de trabajar y duraderas.</p>
             </div>
           </div>
           <div class="mt-4 text-center">
-            <a href="https://wa.me/+59894878078" class="inline-block bg-bosque text-white px-4 py-2 rounded hover:bg-madera transition">Comprar</a>
+              <a href="https://wa.me/59894878078?text=Hola%2C%20estoy%20interesado%20en%20las%20tablas%20de%20pino" target="_blank" rel="noopener noreferrer" class="inline-block bg-bosque text-white px-4 py-2 rounded hover:bg-madera transition">Comprar</a>
           </div>
         </div>
-        <!-- Producto 2 -->
         <div>
-          <div class="bg-white shadow rounded overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1606576362417-abe6efcdf4e1" class="w-full h-48 object-cover" alt="Postes rústicos">
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="C:\Users\facus\Desktop\Aserradero\Imagenes/postes_rusticos.png" class="w-full h-48 object-cover" alt="Postes rústicos">
             <div class="p-4">
               <h4 class="font-bold text-xl mb-2 text-madera">Postes rústicos</h4>
               <p>Perfectos para cercas, corrales o estructuras rurales.</p>
             </div>
           </div>
           <div class="mt-4 text-center">
-            <a href="https://wa.me/+59894878078" class="inline-block bg-bosque text-white px-4 py-2 rounded hover:bg-madera transition">Comprar</a>
+            <a href="https://wa.me/59894878078?text=Hola%2C%20estoy%20interesado%20en%20los%20postes%20r%C3%BAsticos" target="_blank" rel="noopener noreferrer" class="inline-block bg-bosque text-white px-4 py-2 rounded hover:bg-madera transition">Comprar</a>
           </div>
         </div>
-        <!-- Producto 3 -->
         <div>
-          <div class="bg-white shadow rounded overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1615491689913-8a1c251b38d2" class="w-full h-48 object-cover" alt="Vigas tratadas">
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="C:\Users\facus\Desktop\Aserradero\Imagenes\vigas_tratadas.png" class="w-full h-48 object-cover" alt="Vigas tratadas">
             <div class="p-4">
               <h4 class="font-bold text-xl mb-2 text-madera">Vigas tratadas</h4>
               <p>Vigas resistentes y listas para obra o carpintería pesada.</p>
             </div>
           </div>
           <div class="mt-4 text-center">
-            <a href="https://wa.me/+59894878078" class="inline-block bg-bosque text-white px-4 py-2 rounded hover:bg-madera transition">Comprar</a>
+            <a href="https://wa.me/59894878078?text=Hola%2C%20estoy%20interesado%20en%20las%20vigas%20tratadas" target="_blank" rel="noopener noreferrer" class="inline-block bg-bosque text-white px-4 py-2 rounded hover:bg-madera transition">Comprar</a>
           </div>
         </div>
+      </div>
+       <div class="text-center mt-12">
+        <a href="productos.html" class="text-bosque hover:text-madera font-semibold">Ver todos los productos &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- Nosotros -->
-  <section id="nosotros" class="py-20 px-6">
-    <div class="max-w-4xl mx-auto text-center">
+  <section id="nosotros" class="py-20 px-6 bg-white"> <div class="max-w-4xl mx-auto text-center">
       <h3 class="text-3xl font-bold text-bosque mb-6">Sobre nosotros</h3>
-      <p class="text-lg">En Aserradero Estévez trabajamos desde hace más de 20 años brindando madera de excelente calidad a todo el país. Apostamos por un proceso sostenible y por materiales que resistan el paso del tiempo.</p>
+      <p class="text-lg text-gray-700">En Aserradero Estévez trabajamos desde hace más de 20 años brindando madera de excelente calidad a todo el país. Apostamos por un proceso sostenible y por materiales que resistan el paso del tiempo.</p>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="py-20 px-6 bg-[#f0ebe6]">
-    <div class="max-w-3xl mx-auto text-center">
-      <h3 class="text-3xl font-bold text-bosque mb-6">Contacto</h3>
-      <p class="mb-4">¿Querés hacer un pedido o tenés alguna duda? Completá el formulario:</p>
-      <form class="bg-white p-6 rounded shadow-md space-y-4 text-left" action="mailto:aserradero@estevez.com" method="POST" enctype="text/plain">
+  <footer class="bg-white border-t text-gray-300 text-sm">
+    <div class="bg-bosque py-8 px-6 lg:px-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <label for="nombre" class="block text-sm font-semibold text-bosque">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bosque">
+          <h4 class="text-lg font-bold text-white mb-4">Aserradero Estévez</h4>
+          <p class="mb-2 text-white"><i class="fas fa-map-marker-alt text-white mr-2"></i> Minas Shopping Terminal</p>
+          <p class="mb-2 text-white"><i class="fas fa-home text-white mr-2"></i> Lunes a Viernes de 9:00 a 18:00 hs | Sábados de 8 a 12 hs</p>
+          <p class="mb-2 text-white"><i class="fas fa-phone text-white mr-2"></i> (+598) 94 878 078</p>
+          <p class="mb-2 text-white"><i class="fas fa-envelope text-white mr-2"></i> aserradero@estevez.com.uy</p>
         </div>
-        <div>
-          <label for="apellido" class="block text-sm font-semibold text-bosque">Apellido</label>
-          <input type="text" id="apellido" name="apellido" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bosque">
+        <div class="md:col-span-2 lg:col-span-2">
+          <h4 class="text-lg font-bold text-white mb-4">Síguenos</h4>
+          <div class="flex flex-col space-y-2">
+            <a href="https://www.facebook.com/tuusuario" target="_blank" class="text-white hover:text-madera text-lg">
+              <i class="fab fa-facebook-f mr-2"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-white hover:text-madera text-lg">
+              <i class="fab fa-instagram mr-2"></i> Instagram
+            </a>
+          </div>
         </div>
-        <div>
-          <label for="asunto" class="block text-sm font-semibold text-bosque">Asunto</label>
-          <select id="asunto" name="asunto" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bosque">
-            <option value="">Seleccioná una opción</option>
-            <option value="compras">Compras</option>
-            <option value="dudas">Dudas</option>
-          </select>
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-semibold text-bosque">Email</label>
-          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bosque">
-        </div>
-        <div>
-          <label for="mensaje" class="block text-sm font-semibold text-bosque">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bosque"></textarea>
-        </div>
-        <button type="submit" class="bg-bosque text-white px-6 py-2 rounded hover:bg-madera">Enviar</button>
-      </form>
+      </div>
     </div>
-  </section>
-
-  <footer class="text-center py-6 text-sm text-gray-500">
-    &copy; 2025 Aserradero Estévez. Todos los derechos reservados.
   </footer>
+
+  <a href="https://wa.me/59894878078?text=Hola%20quisiera%20más%20información%20sobre%20sus%20productos"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>

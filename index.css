@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* --- Estilos para el botón de WhatsApp --- */
+  .whatsapp-button {
+    position: fixed; /* Fija el botón en la pantalla */
+    bottom: 25px;     /* Distancia desde abajo */
+    right: 25px;      /* Distancia desde la derecha */
+    z-index: 1000;    /* Asegura que esté sobre otros elementos (importante con header fijo) */
+  
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white;              /* Color del ícono */
+    width: 60px;                /* Ancho del botón */
+    height: 60px;               /* Alto del botón */
+    border-radius: 50%;          /* Lo hace circular */
+  
+    display: flex;              /* Permite centrar el ícono fácilmente */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+  
+    font-size: 35px;            /* Tamaño del ícono */
+    text-decoration: none;      /* Quita el subrayado del enlace */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Sombra suave */
+  
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición suave para el hover */
+  
+    /* Aplicación de la animación */
+    animation-name: pulse;         /* Nombre de la animación (definida abajo) */
+    animation-duration: 1.5s;       /* Duración de un ciclo de animación */
+    animation-timing-function: ease-in-out; /* Curva de velocidad */
+    animation-iteration-count: infinite; /* Repetir la animación infinitamente */
+  }
+  
+  /* Animación de "pulso" */
+  @keyframes pulse {
+    0% {
+      transform: scale(1); /* Tamaño normal */
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+    50% {
+      transform: scale(1.1); /* Un poco más grande */
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    }
+    100% {
+      transform: scale(1); /* Vuelve al tamaño normal */
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  /* Efecto opcional al pasar el mouse por encima */
+  .whatsapp-button:hover {
+    transform: scale(1.05); /* Agrandar ligeramente */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    /* animation-play-state: paused; */ /* Descomenta si quieres pausar la animación al pasar el mouse */
+  }
+  /* --- Fin Estilos WhatsApp --- */

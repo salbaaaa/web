@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | Aserradero Estévez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            madera: '#8B5E3C',
+            bosque: '#3F5E4F',
+            marronOscuro: '#3F5E4F'
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="productos.css">
+</head>
+<body class="bg-textura bg-repeat text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <header class="fixed w-full bg-marronOscuro shadow z-50 translate-y-[-100%] opacity-0 animate-slide-in-down transition-opacity duration-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-bold text-white">Aserradero Estévez</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-madera font-bold text-lg text-white">Inicio</a>
+        <a href="productos.html" class="hover:text-madera font-bold text-lg text-white">Productos</a>
+        <a href="nosotros.html" class="hover:text-madera font-bold text-lg text-white">Nosotros</a>
+        <a href="contacto.html" class="hover:text-madera font-bold text-lg text-white">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-grow">
+    <section id="productos" class="py-20 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-10">
+          <h2 class="text-4xl font-bold text-bosque text-left mb-2">Nuestros Productos</h2>
+          <p class="text-lg text-gray-700 text-left">Descubre la variedad de madera y productos que ofrecemos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="./imagenes/producto1.jpg" alt="Madera Aserrada de Pino" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-bosque mb-2">Madera Aserrada de Pino</h3>
+              <p class="text-gray-700 text-sm mb-4">Ideal para construcción y carpintería. Diferentes dimensiones disponibles.</p>
+              <button class="bg-bosque text-white px-4 py-2 rounded-md hover:bg-madera transition">Ver Detalles</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="./imagenes/producto2.jpg" alt="Tablas de Eucalipto" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-bosque mb-2">Tablas de Eucalipto</h3>
+              <p class="text-gray-700 text-sm mb-4">Resistentes y versátiles para muebles y revestimientos.</p>
+              <button class="bg-bosque text-white px-4 py-2 rounded-md hover:bg-madera transition">Ver Detalles</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="./imagenes/producto3.jpg" alt="Postes de Madera Tratada" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-bosque mb-2">Postes de Madera Tratada</h3>
+              <p class="text-gray-700 text-sm mb-4">Perfectos para cercas y estructuras exteriores, alta durabilidad.</p>
+              <button class="bg-bosque text-white px-4 py-2 rounded-md hover:bg-madera transition">Ver Detalles</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="./imagenes/producto4.jpg" alt="Listones de Madera" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-bosque mb-2">Listones de Madera</h3>
+              <p class="text-gray-700 text-sm mb-4">Ideales para acabados y detalles en carpintería.</p>
+              <button class="bg-bosque text-white px-4 py-2 rounded-md hover:bg-madera transition">Ver Detalles</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="./imagenes/producto5.jpg" alt="Machimbre de Madera" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-bosque mb-2">Machimbre de Madera</h3>
+              <p class="text-gray-700 text-sm mb-4">Excelente para revestimientos de paredes y techos.</p>
+              <button class="bg-bosque text-white px-4 py-2 rounded-md hover:bg-madera transition">Ver Detalles</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-md overflow-hidden">
+            <img src="./imagenes/producto6.jpg" alt="Tirantes de Madera" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-bosque mb-2">Tirantes de Madera</h3>
+              <p class="text-gray-700 text-sm mb-4">Resistentes para estructuras de techos y soportes.</p>
+              <button class="bg-bosque text-white px-4 py-2 rounded-md hover:bg-madera transition">Ver Detalles</button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t text-gray-300 text-sm">
+    <div class="bg-bosque py-8 px-6 lg:px-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Aserradero Estévez</h4>
+          <p class="mb-2 text-white"><i class="fas fa-map-marker-alt text-white mr-2"></i> Minas Shopping Terminal</p>
+          <p class="mb-2 text-white"><i class="fas fa-home text-white mr-2"></i> Lunes a Viernes de 9:00 a 18:00 hs | Sábados de 8 a 12 hs</p>
+          <p class="mb-2 text-white"><i class="fas fa-phone text-white mr-2"></i> (+598) 94 878 078</p>
+          <p class="mb-2 text-white"><i class="fas fa-envelope text-white mr-2"></i> aserradero@estevez.com.uy</p>
+        </div>
+        <div class="md:col-span-2 lg:col-span-2">
+          <h4 class="text-lg font-bold text-white mb-4">Síguenos</h4>
+          <div class="flex flex-col space-y-2">
+            <a href="https://www.facebook.com/tuusuario" target="_blank" class="text-white hover:text-madera text-lg">
+              <i class="fab fa-facebook-f mr-2"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-white hover:text-madera text-lg">
+              <i class="fab fa-instagram mr-2"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/59894878078?text=Hola%20quisiera%20más%20información%20sobre%20sus%20productos"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('header');
+      header.classList.remove('translate-y-[-100%]', 'opacity-0');
+      header.style.backgroundColor = 'rgba(63, 94, 79, 1)'; // Establecer opacidad inicial al 100%
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) { // Ajusta este valor según necesites
+        header.style.backgroundColor = 'rgba(63, 94, 79, 0.8)'; // Transparente al bajar
+      } else {
+        header.style.backgroundColor = 'rgba(63, 94, 79, 1)'; // Opaco al estar arriba
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Aserradero Estévez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            madera: '#8B5E3C',
+            bosque: '#3F5E4F',
+            marronOscuro: '#3F5E4F'
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body class="bg-textura bg-repeat text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <header class="fixed w-full bg-marronOscuro shadow z-50 translate-y-[-100%] opacity-0 animate-slide-in-down transition-opacity duration-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-bold text-white">Aserradero Estévez</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-madera font-bold text-lg text-white">Inicio</a>
+        <a href="productos.html" class="hover:text-madera font-bold text-lg text-white">Productos</a>
+        <a href="nosotros.html" class="hover:text-madera font-bold text-lg text-white">Nosotros</a>
+        <a href="contacto.html" class="hover:text-madera font-bold text-lg text-white">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./imagenes/aserraderos-de-madera.png');">
+  </div>
+
+  <main class="flex-grow">
+    <section id="contacto" class="py-20 px-6 bg-[#white]">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="mb-10">
+          <h3 class="text-4xl font-bold text-bosque text-left mb-2">Contactanos</h3>
+          <p class="text-lg text-gray-700 text-left">Mandanos un mensaje, te responderemos a la brevedad.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+          <form action="mailto:aserradero@estevez.com" method="POST" enctype="text/plain" class="space-y-6 text-left w-full max-w-[550px]">
+
+            <div class="relative border border-gray-400 shadow-md">
+              <input type="text" name="nombre_apellido" required placeholder="Nombre" class="w-full p-3 pl-4 pr-10 rounded-none focus:outline-none focus:ring-2 focus:ring-bosque">
+              <img src="C:\Users\facus\Desktop\Aserradero\Imagenes/usuario.png" alt="Icono de usuario" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 opacity-60">
+            </div>
+
+            <div class="relative border border-gray-400 shadow-md">
+              <input type="tel" name="telefono" pattern="[0-9]+" required placeholder="Teléfono" class="w-full p-3 pl-4 pr-10 rounded-none focus:outline-none focus:ring-2 focus:ring-bosque">
+              <img src="C:\Users\facus\Desktop\Aserradero\Imagenes/llamar.png" alt="Icono de teléfono" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 opacity-60">
+            </div>
+
+            <div class="relative border border-gray-400 shadow-md">
+              <input type="email" name="email" required placeholder="Email" class="w-full p-3 pl-4 pr-10 rounded-none focus:outline-none focus:ring-2 focus:ring-bosque">
+              <img src="C:\Users\facus\Desktop\Aserradero\Imagenes/correo-electronico.png" alt="Icono de email" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 opacity-60">
+            </div>
+
+            <div class="relative border border-gray-400 shadow-md">
+              <textarea name="mensaje" rows="4" required placeholder="Mensaje" class="w-full p-3 pl-4 pr-10 rounded-none focus:outline-none focus:ring-2 focus:ring-bosque"></textarea>
+              <img src="C:\Users\facus\Desktop\Aserradero\Imagenes/dibujar.png" alt="Icono de mensaje" class="absolute right-4 top-3 w-5 h-5 opacity-60">
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="bg-bosque text-white px-8 py-3 rounded-lg hover:bg-madera transition">Enviar</button>
+            </div>
+          </form>
+
+          <div class="w-full h-[350px] rounded-lg overflow-hidden shadow-md">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3293.2520667806903!2d-55.23798036167795!3d-34.369508689950315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1745253942544!5m2!1ses-419!2suy"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t text-gray-300 text-sm">
+    <div class="bg-bosque py-8 px-6 lg:px-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Aserradero Estévez</h4>
+          <p class="mb-2 text-white"><i class="fas fa-map-marker-alt text-white mr-2"></i> Minas Shopping Terminal</p>
+          <p class="mb-2 text-white"><i class="fas fa-home text-white mr-2"></i> Lunes a Viernes de 9:00 a 18:00 hs | Sábados de 8 a 12 hs</p>
+          <p class="mb-2 text-white"><i class="fas fa-phone text-white mr-2"></i> (+598) 94 878 078</p>
+          <p class="mb-2 text-white"><i class="fas fa-envelope text-white mr-2"></i> aserradero@estevez.com.uy</p>
+        </div>
+        <div class="md:col-span-2 lg:col-span-2">
+          <h4 class="text-lg font-bold text-white mb-4">Síguenos</h4>
+          <div class="flex flex-col space-y-2">
+            <a href="https://www.facebook.com/tuusuario" target="_blank" class="text-white hover:text-madera text-lg">
+              <i class="fab fa-facebook-f mr-2"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-white hover:text-madera text-lg">
+              <i class="fab fa-instagram mr-2"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/59894878078?text=Hola%20quisiera%20más%20información%20sobre%20sus%20productos"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('header');
+      header.classList.remove('translate-y-[-100%]', 'opacity-0');
+      header.style.backgroundColor = 'rgba(63, 94, 79, 1)'; // Establecer opacidad inicial al 100%
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) { // Ajusta este valor según necesites
+        header.style.backgroundColor = 'rgba(63, 94, 79, 0.8)'; // Transparente al bajar
+      } else {
+        header.style.backgroundColor = 'rgba(63, 94, 79, 1)'; // Opaco al estar arriba
+      }
+    });
+  </script>
+</body>
+</html>
